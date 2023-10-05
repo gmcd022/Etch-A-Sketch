@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.grid {
+    display: grid;
+    row-gap: 1px;
+    column-gap: 1px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    margin: 2rem auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 960px;
+    width: 960px;
+}
+
+.gridItem {
+    border: 1px solid #000000;
+    margin: -1px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    gap: 2rem;
+    margin: 5rem;
+}
